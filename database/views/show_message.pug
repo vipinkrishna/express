@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title PERSON
+    body
+        if (type=="error")
+            h3(style="color:red") #{message}
+        else if (type=="ok")
+            h3(style="color:green") #{message}
+        else
+            h3(style="color:green") NEW PERSON ADDED!
+            h4 Name: #{person.name}
+            h4 Age: #{person.age}
+            h4 Nationality: #{person.nationality}

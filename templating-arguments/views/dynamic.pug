@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title=name
+    body
+        h1=name
+        p.greeting#people Greetings from #{name}!
+        div
+            |Use Pipe Operator
+            |To insert multiline text
+        div.
+            Use "." at the end of tag
+            To denote block of text
+        //Comment
+        div.container.column.main#division(width="100", height="100" style="background-color:yellow") INDIA
+        a(href=url) Google

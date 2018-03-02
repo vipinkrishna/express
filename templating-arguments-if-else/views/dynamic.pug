@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        title=user.name
+    body
+
+        if user
+            h1 Hi, #{user.name}
+            p.greeting#people Greetings from #{user.name}!
+        else
+            a(href="/signup") Sign UP
+        
+        div
+            |Use Pipe Operator
+            |To insert multiline text
+        div.
+            Use "." at the end of tag
+            To denote block of text
+        //Comment
+        div.container.column.main#division(width="100", height="100" style="background-color:yellow") INDIA
+        a(href=user.url) Google
+
+        //- if user
+        //-     h1 Hi, #{user.name}
+        //-         else
+        //-     a(href="/signup") Sign UP

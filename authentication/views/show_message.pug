@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title PERSON
+    body
+        if (type=="error")
+            h3(style="color:red") #{message}
+        else if (type=="info")
+            h3(style="color:green") #{message}
+        else
+            h3(style="color:blue") #{message}
