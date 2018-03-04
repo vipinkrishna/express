@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title CREATE
+    body
+        h1 CREATE
+        a(href="/movies/home") HOME
+        hr
+        p
+            if(message)
+                if(type=="error")
+                    h4(style="color:red") #{message}
+                else if(type=="info")
+                    h4(style="color:green") #{message}
+            form(action="/movies/create" method="POST")
+                div
+                    input(name="id" placeholder="MOVIE ID" required)
+                br
+                div
+                    input(name="name" placeholder="MOVIE NAME")
+                br
+                div
+                    input(name="year" placeholder="YEAR")
+                br
+                div
+                    input(name="rating" placeholder="RATING")
+                br
+                button(type="submit") CREATE MOVIE
